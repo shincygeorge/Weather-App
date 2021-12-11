@@ -259,17 +259,17 @@ label
 }
 /* Style the social media icons with color, if you want */
 .icon-bar a:hover {
-	background-image: linear-gradient(to right, #ff76b4, #ff45a0);
+	background-image: linear-gradient(to right, #9e9fff,  #877bff);
 }
 .icontake {
-	background-image: linear-gradient(to right, #9e9fff, #877bff);	  
+	background-image: linear-gradient(to right,#b2dbc5, #6beda7);	  
 }
 .iconroundbtm {
-	background-image: linear-gradient(to right, #9e9fff, #877bff);
+	background-image: linear-gradient(to right, #b2dbc5, #6beda7);
 	border-bottom-right-radius: 20px;
 }
 .iconroundup {
-	background-image: linear-gradient(to right, #9e9fff, #877bff);
+	background-image: linear-gradient(to right, #b2dbc5, #6beda7);
 	border-top-right-radius: 20px;
 }
 .airQ {
@@ -279,7 +279,7 @@ label
 }
 .rfBtn {
     border-radius: 8px;
-    background-color: #65d7eb; /* Green */
+    background-color: #65d7eb; 
     border: none;
     color: #8c83ff;
     padding: 15px 32px;
