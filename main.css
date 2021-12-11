@@ -2,7 +2,7 @@
 	width: auto;
 	align-items: center;
 	height: 50px;
-	background-color: #f1f2ff;
+	background-color: #c8c9cc;
     border-radius: 15px;
 	display: flex;
 	align-items: center;
@@ -11,7 +11,7 @@
 }
 .searchBox > a {
 	font-size: 20px;
-	color: #777;
+	color: #D6D6D6;
 }
 .searchBox > input{
 
@@ -221,20 +221,20 @@ label
     background-color: #000;
 }
 .rightTop {
-	color: #7760ff;
+	color: #49de82;
 	margin-top: 3%;
 	margin-left: 5%;
 	font-size: 5em;
 	margin-bottom: 0%;
 }
 .rightDate {
-	color: #4a3e6a;
+	color: #60d680;
 	margin-left: 5%;
 	font-size: 1.5em;
 	margin-bottom: 0%;
 }
 .rightGreet {
-	color: #7a6bf3;
+	color: #41753f;
 	margin-top: 1%;
 	margin-left: 5%;
 	font-size: 2.5em;
@@ -273,13 +273,13 @@ label
 	border-top-right-radius: 20px;
 }
 .airQ {
-    color: #03e879;
+    color: #658beb;
     font-size: 3em;
     margin-left: 8%;
 }
 .rfBtn {
     border-radius: 8px;
-    background-color: #f5f5ff; /* Green */
+    background-color: #65d7eb; /* Green */
     border: none;
     color: #8c83ff;
     padding: 15px 32px;
@@ -307,7 +307,7 @@ label
 }
 .inCard {
     text-align: center;
-    background-color: #d4e5f0;
+    background-color: white;
     color: #07cc7f;
     font-size: 1.5em;
     border-radius: 10px;
@@ -382,7 +382,7 @@ label
 }
 
 .midCard {
-    background-color: #fff9ee;
+    background-color: #f5d293;
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 8%;
