@@ -1,216 +1,386 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-    <title>Weather App</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous">
-    </script>
+  <meta charset="utf-8">
+  <title>Weather</title>
+  <link rel="icon" type="image" href="Resources/favicon.png">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/5c13f22622.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-   
-    <div class="first">
-            <h1><span>07:30 AM</span><div class="daytime"><div class="active"><i class="far fa-sun"></i></div><div><i class="far fa-moon"></i></div></h1>
-            <h3>Wednesday,14 April 2021 </h3>
-            <h2><p><img src="sun1.png" width="40" height="40"</p> Good morning,SHINCY!</h2>
-            <div class="weekdays">
-                <div>
-                    <img src="moon.png" width="75%" height="50%">
-                    <p>Sun
-                    <br>25&deg;C</p>
-                </div>
-                <div>
-                    <img src="sun.png" width="75%" height="50%">
-                    <p>Mon
-                    <br>28&deg;C</p>
-                </div>
-                <div>
-                    <img src="cloudy.png" width="75%" height="50%">
-                    <p>Tue
-                    <br>25&deg;C</p>
-                </div>
-                <div class="active">
-                    <img src="windy.png" width="75%" height="50%">
-                    <p>Wed
-                    <br>20&deg;C</p>
-                </div>
-                <div>
-                    <img src="thunderbolt.png" width="75%" height="50%">
-                    <p>Thu
-                    <br>5&deg;C</p>
-                </div>
-                <div>
-                    <img src="raindrop.png" width="75%" height="50%">
-                    <p>Fri
-                    <br>18&deg;C</p>
-                </div>
-                
-                
-            </div>
-            
-                
-                
-            <div class="more">
-                
-                   <div class="aqi" ba >
-                       <header>Air Quality Index</header>
-                       <div id="good" class="d-flex bd-highlight">
-                            <div class="p-2 bd-highlight"><img src="stars.png" width="50px" height="50px"></div>
-                            <div class="p-2 flex-grow-1 bd-highlight"><span>Good</span>
-                            <br>A good day for a walk!<br></div>
-                            <div class="p-2 bd-highlight"><button>Refresh</button></div>
-                        </div>
-                        <div class="container2">
-                            <div><p>O<sub>2</sub><br>7</p></div>
-                            <div><p>SO<sub>2</sub><br>4.8</p></div>
-                            <div><p>CO<br>0.9</p></div>
-                            <div><p>NO<sub>2</sub><br>4.6</p></div>
-                        </div>
-                   </div>
-                  
-                   <div class="suninfo">
-                         <div id="suninfo_head"><header>Sunrise & Sunset</header><p><i class="fas fa-plus-circle"></i></p></div>
-                         <div>
-                             <p>Dhaka</p>
-                            <table class="table">
-                                <thead>
-                                <tr>
-                                    <th id="sunrise" scope="col-1"><i class="fas fa-sun"></i></th>
-                                    <th scope="col-3"><p>Sunrise<br>4:40 AM</p></th>
-                                    <th  id="sunset" scope="col-sm-1"><i class="fas fa-moon"></i></th>
-                                    <th scope="col-3"><p>Sunset<br>6:53 PM</p></th>
-                                </tr>
-                                </thead>
-                            </table>
-                         </div>
-                         
-                         <div>
-                            <p>Tokyo</p>
-                            <table class="table">
-                                <thead>
-                                <tr>
-                                    <th id="sunrise" scope="col-1"><i class="fas fa-sun"></i></th>
-                                    <th scope="col-3"><p>Sunrise<br>4:47 AM</p></th>
-                                    <th  id="sunset" scope="col-sm-1"><i class="fas fa-moon"></i></th>
-                                    <th scope="col-3"><p>Sunset<br>6:49 PM</p></th>
-                                </tr>
-                                </thead>
-                            </table>
-                            
-                         </div>
-                         
-<div>
-                         <tbody>
-                            <tr>
-                                <td scope="col-1"> <i class="fas fa-wind"></i></td>
-                                <td scope="col-3">Kabul</td>
-                                <td scope="col-1">05:00 AM</td>
-                                <td scope="col-3">07:00 PM</td>
-                            </tr>
+  <div class="row">
 
-                            <tr>
-                                <td scope="col-1"> <i class="fas fa-wind"></i></td>
-                                <td scope="col-3">Tiarana</td>
-                                <td scope="col-1">05:00 AM</td>
-                                <td scope="col-3">07:00 PM</td>
-                            </tr>
-
-                            <tr>
-                                <td scope="col-1"> <i class="fas fa-wind"></i></td>
-                                <td scope="col-3">Algiers</td>
-                                <td scope="col-1">05:00 AM</td>
-                                <td scope="col-3">07:00 PM</td>
-                            </tr>
-                        </tbody>
-                    </div>
-                    </div>
-                   </div>
-            
+    <div class="col-9" style="background-color: #f1f2ff">
+      <!-------------------------------------------------------------------------------------------------------- Left Portion-->
+      <!---------------------------------------------------------- Time Date & Toggle-->
+      <div class="row">
+        <div class="col-9">
+          <h1 class="rightTop"><b>10:11&nbsp;AM</b></h1>
+        </div>
+        <div class="col-3" style="text-align: center; margin-top: 3%; margin-bottom: 0%;">
+          <!--Day Night Toggler-->
+          <input type="checkbox" id="toggle_checkbox">
+          <label for="toggle_checkbox">
+            <div id="star">
+              <div class="star" id="star-1">★</div>
+              <div class="star" id="star-2">★</div>
             </div>
+            <div id="moon"></div>
+          </label>
+        </div>
+      </div>
+      <!----------------------------------------------------------- Date Widget-->
+      <div class="row">
+        <h3 class="rightDate"><b>Tuesday, 07 December, 2021</b></h3>
+      </div>
+      <!----------------------------------------------------------- Name Display-->
+      <div class="row">
+        <h2 class="rightGreet"><b><i class="far fa-sun"></i>&nbsp;Good morning, Shincy!</b></h2>
+      </div>
+
+      <!----------------------------------------------------------- Day Cards-->
+      <div class="row" style="margin-top: 3%;">
+        <!--------------------------- Sunday-->
+        <div class="card" style="margin-left: 8%; border-radius: 35px;">
+          <img class="wIcon" src="rain drop.png" alt="Avatar" style="width:100%">
+          <div class="container">
+            <h4><b>Sun</b></h4>
+            <h5><b>28&deg;</b></h5>
+          </div>
+        </div>
+        <!--------------------------- Monday-->
+        <div class="card" style="border-radius: 35px;">
+          <img class="wIcon" src="thunderbolt.png" alt="Avatar" style="width:100%">
+          <div class="container">
+            <h4><b>Mon</b></h4>
+            <h5><b>17&deg;</b></h5>
+          </div>
+        </div>
+        <!--------------------------- Tuesday-->
+        <div class="card" style="border-radius: 35px;">
+          <img class="wIcon" src="cloudy.png" alt="Avatar" style="width:100%">
+          <div class="container">
+            <h4><b>Tue</b></h4>
+            <h5><b>20&deg;</b></h5>
+          </div>
+        </div>
+        <!--------------------------- Wednesday-->
+        <div class="card" style="border-radius: 35px;">
+          <img class="wIcon" src="moon.png" alt="Avatar" style="width:100%">
+          <div class="container">
+            <h4><b>Wed</b></h4>
+            <h5><b>29&deg;</b></h5>
+          </div>
+        </div>
+        <!--------------------------- Thursday-->
+        <div class="card" style="border-radius: 35px;">
+          <img class="wIcon" src="sun1.png" alt="Avatar" style="width:100%">
+          <div class="container">
+            <h4><b>Thu</b></h4>
+            <h5><b>22&deg;</b></h5>
+          </div>
+        </div>
+        <!--------------------------- Friday-->
+        <div class="card" style="border-radius: 35px;">
+          <img class="wIcon" src="windy.png" alt="Avatar" style="width:100%">
+          <div class="container">
+            <h4><b>Fri</b></h4>
+            <h5><b>16&deg;</b></h5>
+          </div>
+        </div>
+        <!--------------------------- Saturday-->
+        <div class="card" style="border-radius: 35px;">
+          <img class="wIcon" src="night thunder.png" alt="Avatar" style="width:100%">
+          <div class="container">
+            <h4><b>Sat</b></h4>
+            <h5><b>20&deg;</b></h5>
+          </div>
+        </div>
+      </div>
+
+      <!--------------------------------------------------------------------- Details Card-->
+      <div class="row">
+
+        <div class="col-6">
+          <!------------------------------------------------------------ First Card-->
+          <div class="row" style="margin-left: 8%; margin-top: 3%;">
+            <div class="row, wCard">
+              <div class="row">
+                <div class="col-9">
+                  <h2 style="color: #4a4162; margin-left: 8%; margin-top: 8%; margin-bottom: 5%;"><b>Air Quality
+                      Index</b></h2>
+                </div>
+                <div class="col-3">
+                  <h2 style="color: #ccc8da; font-size: 1.5em; margin-right: 15%; margin-top: 20%;"><b><i
+                        class="fas fa-map-marker-alt"></i>&nbsp;Howrah</b></h2>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-9">
+                  <h3 class="airQ"><i class="fas fa-wind"></i>&nbsp;Good</h3>
+                  <h5 style="color: #d3cede; margin-left: 10%; margin-bottom: 8%;"><b>A perfect day for a Walk!</b></h5>
+                </div>
+                <div class="col-3">
+                  <button class="rfBtn">Refresh</button>
+                </div>
+              </div>
+              <div class="row">
+                <!-- PM2-->
+                <div class="styleVal" style="margin-left: auto;">
+                  <div class="inCard"><br>
+                    <h5><b>9.3</b></h5>
+                    <h6><b>PM2</b></h6><br>
+                  </div>
+                </div>
+                <!-- PM10-->
+                <div class="styleVal">
+                  <div class="inCard"><br>
+                    <h5><b>12.2</b></h5>
+                    <h6><b>PM10</b></h6><br>
+                  </div>
+                </div>
+                <!-- SO2-->
+                <div class="styleVal">
+                  <div class="inCard"><br>
+                    <h5><b>4.8</b></h5>
+                    <h6><b>SO2</b></h6><br>
+                  </div>
+                </div>
+                <!-- NO2-->
+                <div class="styleVal">
+                  <div class="inCard"><br>
+                    <h5><b>4.6</b></h5>
+                    <h6><b>NO2</b></h6><br>
+                  </div>
+                </div>
+                <!-- O2-->
+                <div class="styleVal">
+                  <div class="inCard"><br>
+                    <h5><b>6.5</b></h5>
+                    <h6><b>O2</b></h6><br>
+                  </div>
+                </div>
+                <!-- CO-->
+                <div class="styleVal" style="margin-right: auto;">
+                  <div class="inCard"><br>
+                    <h5><b>0.9</b></h5>
+                    <h6><b>CO</b></h6><br>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!----------------------------------------------------------- Second Card-->
+          <div class="row">
+            <div class="wCard" style="margin-left: 15%; margin-top: 5%">
+              <div style="margin-bottom: 5%;"><br>
+                <h1 style="color: #4a4162; margin-left: 5%; font-size: 2em;"><b>Rain Data</b></h1>
+              </div>
+              <div class="row">
+                <div class="col-2" style="margin-left: 12%;">
+                  <div class="progress progress-bar-vertical">
+                    <div class="progress-bar progress-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                      aria-valuemax="100" style="height: 30%;"> </div>
+                  </div>
+                </div>
+                <div class="col-2">
+                  <div class="progress progress-bar-vertical">
+                    <div class="progress-bar progress-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                      aria-valuemax="100" style="height: 50%;"> </div>
+                  </div>
+                </div>
+                <div class="col-2">
+                  <div class="progress progress-bar-vertical">
+                    <div class="progress-bar progress-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                      aria-valuemax="100" style="height: 80%;"> </div>
+                  </div>
+                </div>
+                <div class="col-2">
+                  <div class="progress progress-bar-vertical">
+                    <div class="progress-bar progress-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                      aria-valuemax="100" style="height: 40%;"> </div>
+                  </div>
+                </div>
+                <div class="col-2">
+                  <div class="progress progress-bar-vertical">
+                    <div class="progress-bar progress-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                      aria-valuemax="100" style="height: 50%;"> </div>
+                  </div>
+                </div>
+                <div class="col-2"></div>
+              </div><br>
+            </div>
+          </div>
+
+        </div>
+        <!------------------------------------------------------------------- Third Card-->
+        <div class="col-6">
+          <div class="tCard">
+            <div class="row">
+              <h3 style="color: #5d5570; margin-left: 8%; margin-top: 3%; margin-bottom: 8%;">
+                <b>Sunrise&nbsp;&#38;&nbsp;Sunset</b></h3>
+            </div>
+
+            <div class="row, midCard">
+              <div class="row">
+                <h3 style="font-size: 1.5em; color: #615973; margin-left: 5%; margin-top: 4%; margin-bottom: 6%;"><b><i
+                      class="fas fa-map-marker-alt"></i>&nbsp;Kolkata</b></h3>
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <h3 style="color: #615973; margin-left: 15%;"><b><i class="far fa-sun"
+                        style="color: #f6cc88; font-size: 2em;"></i>&nbsp;Sunrise</b></h3>
+                  <h1 style="color: #8884d9; margin-left: 20%;"><b>4:40&nbsp;AM</b></h1>
+                </div>
+                <div class="col-6">
+                  <h3 style="color: #615973; margin-left: 15%;"><b><i class="far fa-moon"
+                        style="color: #f6cc88; font-size: 2em;"></i>&nbsp;Sunset</b></h3>
+                  <h1 style="color: #8884d9; margin-left: 20%;"><b>6:53&nbsp;PM</b></h1><br>
+                </div>
+              </div>
+            </div>
+
+            <div class="row, midCard">
+              <div class="row">
+                <h3 style="font-size: 1.5em; color: #615973; margin-left: 5%; margin-top: 4%; margin-bottom: 6%;"><b><i
+                      class="fas fa-map-marker-alt"></i>&nbsp;Tokyo</b></h3>
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <h3 style="color: #615973; margin-left: 15%;"><b><i class="far fa-sun"
+                        style="color: #f6cc88; font-size: 2em;"></i>&nbsp;Sunrise</b></h3>
+                  <h1 style="color: #8884d9; margin-left: 20%;"><b>4:47&nbsp;AM</b></h1>
+                </div>
+                <div class="col-6">
+                  <h3 style="color: #615973; margin-left: 15%;"><b><i class="far fa-moon"
+                        style="color: #f6cc88; font-size: 2em;"></i>&nbsp;Sunset</b></h3>
+                  <h1 style="color: #8884d9; margin-left: 20%;"><b>6:49&nbsp;PM</b></h1><br>
+                </div>
+              </div>
+            </div><br>
+          </div>
+        </div>
+      </div>
+
+      <!----------------------------------------------------------- Navbar-->
+      <div class="icon-bar" style="margin-top: auto; margin-bottom: auto;">
+
+        <a href="#" class="iconroundup"><i class="far fa-window-restore"></i></a>
+        <a href="#" class="icontake"><i class="fas fa-map-marker-alt"></i></a>
+        <a href="#" class="icontake"><i class="fas fa-chart-bar"></i></a>
+        <a href="#" class="icontake"><i class="fas fa-thermometer-three-quarters"></i></a>
+        <a href="#" class="icontake"><i class="far fa-calendar-check" style="user-select: auto;"></i></a>
+        <a href="#" class="iconroundbtm"><i class="fas fa-cog" style="user-select: auto;"></i></a>
+
+      </div>
+
+      <div><br><br></div>
+
     </div>
-    <div class="second">
-        
-            <div class="search"> 
-                <div class=search_input><input class="search_input" type="text" name="" placeholder="Search..."> </div>
-                <div class="search_icon"><i class="fas fa-search-location"></i></div>
-                
-            </div>
-            
-            <div class="city">
-                <header><i class="fas fa-map-marker-alt">&nbsp;&nbsp;</i>Dhaka</header>
-                    <img src="night.png" width="60%" height="50%">
-                   <p>Today,14 April<br>
-                   Thunder and Rain</p>
-                <tbody>
-                   <tr>
-                    <td scope="col-1"> <i class="fas fa-wind"></i></td>
-                    <td scope="col-3">Wind</td>
-                    <td scope="col-1">|</td>
-                    <td scope="col-3">17km/h</td>
-                </tr>
-                   
-                   <tr>
-                    <td scope="col-1"><i class="fas fa-tint"></i></td>
-                    <td scope="col-3">Hum</td>
-                    <td scope="col-1">|</td>
-                    <td scope="col-3">28%</td>
-                </tr>
-            </tbody>
-            </div>
-            <div class="moreinfo">
-                            <div class="info_table">
-                            <table class="table">
-                                <tbody>
-                                <tr>
-                                    <td scope="col-1"> <i class="fas fa-wind"></i></td>
-                                    <td scope="col-3">Wind</td>
-                                    <td scope="col-1">|</td>
-                                    <td scope="col-3">15km/h</td>
-                                </tr>
-                                <tr>
-                                    <td scope="col-1"><i class="fas fa-tint"></i></td>
-                                    <td scope="col-3">Hum</td>
-                                    <td scope="col-1">|</td>
-                                    <td scope="col-3">28%</td>
-                                </tr>
-                                </tbody>
-                            </table>
-                            </div>
-                          <div class="cityname_infotable">
-                                <p><i class="fas fa-map-marker-alt"></i>&nbsp;Tokyo</p><span2>26&deg;C</span2>
-                            </div>
-            </div>
 
-            <div class="moreinfo">
-                <div class="info_table">
-                <table class="table">
-                    <tbody>
-                    <tr>
-                        <td scope="col-1"> <i class="fas fa-wind"></i></td>
-                        <td scope="col-3">Wind</td>
-                        <td scope="col-1">|</td>
-                        <td scope="col-3">17km/h</td>
-                    </tr>
-                    <tr>
-                        <td scope="col-1"><i class="fas fa-tint"></i></td>
-                        <td scope="col-3">Hum</td>
-                        <td scope="col-1">|</td>
-                        <td scope="col-3">25%</td>
-                    </tr>
-                    </tbody>
-                </table>
-                </div>
-              <div class="cityname_infotable">
-                    <p><i class="fas fa-map-marker-alt"></i>&nbsp;NY</p><span2>31&deg;C</span2>
-                </div>
-</div>
+    <!--------------------------------------------------------------------------------------------------------- Right Portion-->
+    <div class="col-3">
+
+      <div class="row">
+        <!------------------------------------------------------------------------- Holding the Search Bar-->
+        <div class="col-8">
+          <container class="searchBox">
+            <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+            <input type="text" placeholder="search">
+            <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a>
+          </container>
+        </div>
+        <div class="col-4">
+          <!--------------------------------------------------------------------- Notification and Profile setting-->
+          <container class="profileBox">
+            <a style="margin-top: 20px;" href="#"><i class="fa fa-bell-o" aria-hidden="true"></i></a>
+            <img src="Resources/Tony.jpg">
+          </container>
+        </div>
+      </div>
+      <!---------------------------------------------------------------------------- Card 1 on RIght Hand side-->
+      <div class="row">
+        <div class="rainCard">
+          <!-- City Name-->
+          <div style="padding-left: 20px;"><br>
+            <h3><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;Nagpur</h3>
+          </div>
+
+          <!-- Icon and Date-->
+          <div style="text-align: center;">
+            <img src="Resources/cloud.png">
+            <h6><b>Today, 7 December</b></h6>
+          </div>
+
+          <!-- Temperature-->
+          <div style="text-align: center;">
+            <h1><b>26&deg;</b></h1>
+          </div>
+
+          <!-- Other Info with day-->
+          <div style="text-align: center;">
+            <h4><b>Tuesday</b></h4><br>
+            <h5><b>&nbsp;&nbsp;&nbsp;<i class="fa fa-wind" aria-hidden="true"></i>&nbsp;Wind &nbsp; |
+                &nbsp;19&nbsp;km/h</b></h5>
+            <h5><b><i class="fas fa-tint"></i>&nbsp;Hum &nbsp; | &nbsp;22&nbsp;&percnt;</b></h5><br>
+          </div>
+        </div>
+      </div>
+
+      <!---------------------------------------------------------------------------- Card 2 on RIght Hand side-->
+      <div class="row, secCard">
+        <br>
+        <div class="row">
+          <div class="col-8" style="text-align: center;">
+            <h5><b>&nbsp;&nbsp;&nbsp;<i class="fa fa-wind" aria-hidden="true"></i>&nbsp;Wind &nbsp; | &nbsp;
+                17&nbsp;km/h</b></h5>
+          </div>
+          <div class="col-4" style="text-align: center;">
+            <h5><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;<b>Delhi</b></h5><br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-8" style="text-align: center;">
+            <h5><b><i class="fas fa-tint"></i>&nbsp;Hum &nbsp; | &nbsp; 21&nbsp;&percnt;</b></h5>
+          </div>
+          <div class="col-4" style="text-align: center;">
+            <h4><b>22&nbsp;&deg;</b></h4>
+          </div>
+        </div>
+        <br>
+      </div>
+
+      <!------------------------------------------------------------------------------ Card 3 on RIght Hand side-->
+      <div class="row, secCard" style="background-image: linear-gradient(to right, #fecb71, #ffbc50);">
+        <br>
+        <div class="row">
+          <div class="col-8" style="text-align: center;">
+            <h5><b>&nbsp;&nbsp;&nbsp;<i class="fa fa-wind" aria-hidden="true"></i>&nbsp;Wind &nbsp; | &nbsp;
+                22&nbsp;km/h</b></h5>
+          </div>
+          <div class="col-4" style="text-align: center;">
+            <h5><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;<b>NY</b></h5><br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-8" style="text-align: center;">
+            <h5><b><i class="fas fa-tint"></i>&nbsp;Hum &nbsp; | &nbsp; 10&nbsp;&percnt;</b></h5>
+          </div>
+          <div class="col-4" style="text-align: center;">
+            <h4><b>-5&nbsp;&deg;</b></h4>
+          </div>
+        </div>
+        <br>
+      </div>
+
 
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-    </script>
+  </div>
 </body>
+
 </html>
