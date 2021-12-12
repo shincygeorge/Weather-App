@@ -80,7 +80,7 @@
 }
 /* just changing the position of image
 of rain using keyframes*/
-@keyframes rain {
+@keyframes green {
   0% {
 	  background-position: 0 0;
 	  opacity: 1;
