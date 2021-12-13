@@ -59,7 +59,7 @@
   position: relative;
   width: 80%;
   height: 85%;
-  background-image: linear-gradient(to right, #8042e3, #fa64c0);
+  background-image: linear-gradient(to right,  #266dc9, #fa64c0);
   background-size: cover;
   background-position: center;
   border-radius: 25px;
@@ -124,7 +124,7 @@ label
     width: 116px;
     height: 56px;
     margin: 0 auto;
-    background-color: #03a9f4;
+    background-color: #28c758;
     border-radius: 56px;
     transform: translateY(-50%);
     cursor: pointer;
@@ -139,7 +139,7 @@ label
     left: 13px;
     width: 30px;
     height: 30px;
-    background-color: #fff;
+    background-color: yellow;
     transform: scale(1);
     border-radius: 50%;
     transition: 0.3s ease top, 0.3s ease left, 0.3s ease transform, 0.3s ease background-color;
